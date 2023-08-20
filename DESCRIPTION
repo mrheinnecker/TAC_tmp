@@ -1,0 +1,47 @@
+Package: TopArtCalc
+Type: Package
+Title: Package for calculation of TOP-ART score for WGS/WES sample
+Version: 1.0.2
+Date: 2023-05-04
+Authors@R: c(
+  person("Marco", "Rheinnecker", 
+    email="marco.rheinnecker@dkfz-heidelberg.de", 
+    role = c("aut", "cre"),
+    comment=c(ORCID="0009-0009-7181-3977")), 
+  person("Marc", "Ruebsam", 
+    role = c("aut")),
+  person("Daniel", "Huebschmann", 
+    role = c("aut")),  
+  person("Martina", "Froehlich", 
+    role = c("aut")),
+  person("Barbara", "Hutter", 
+    role = c("aut"))
+    )
+Imports: 
+    GenomicAlignments, 
+    YAPSA,
+    knitr,
+    GenomicRanges, 
+    Rsamtools, 
+    IRanges, 
+    VariantAnnotation, 
+    ZygosityPredictor, 
+    dplyr, 
+    stringr, 
+    tibble,
+    crayon,
+    readr
+License: GPL-2
+Description: The TOP-ART calculator calculates the TOP-ART score
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+biocViews: BiomedicalInformatics
+Depends: 
+    R (>= 4.2.0)
+LazyData: false
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat,
+    BiocStyle
+VignetteBuilder: knitr
